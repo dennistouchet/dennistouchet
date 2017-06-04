@@ -1,0 +1,189 @@
+﻿$primary: #3ed1d6;
+$light1: #f2f2f2;
+$light2: #ebebeb;
+$dark1: #d4d4d4;
+$dark2: #383838;
+
+/*Typography*/
+@font-face {
+	font-family: 'Archivo Narrow';
+	src: url('../fonts/ArchivoNarrow-Regular.woff2') format('woff2'),
+		url('../fonts/ArchivoNarrow-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+} 
+@font-face {
+	font-family: 'Archivo Narrow';
+	src: url('../fonts/ArchivoNarrow-Italic.woff2') format('woff2'),
+		url('../fonts/ArchivoNarrow-Italic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Archivo Narrow';
+	src: url('../fonts/ArchivoNarrow-Bold.woff2') format('woff2'),
+		url('../fonts/ArchivoNarrow-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Archivo Narrow';
+	src: url('../fonts/ArchivoNarrow-BoldItalic.woff2') format('woff2'),
+		url('../fonts/ArchivoNarrow-BoldItalic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'DejaVu Sans Mono';
+	src: url('../fonts/DejaVuSansMono.woff2') format('woff2'),
+		url('../fonts/DejaVuSansMono.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+$fontStack: 'Archivo Narrow', sans-serif;
+$gutter: 30px;
+
+/*Universal Styles*/
+body {
+    font: {
+        family: $fontStack;
+        weight: normal;
+        size: 14px;
+    }
+    color: $dark2;
+    background-color:#fff;  
+    margin:0;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+header{
+    position: fixed;
+    z-index:10;
+    left:0;
+    right:0;
+    top:0;
+    background: #fff;
+    padding:0 $gutter/2;
+    h1{
+        margin: 0;
+        font: {
+            family: 'DejaVu Sans Mono', sans-serif;
+            size: 1.1em;
+        }
+        padding: 0 $gutter/2;
+    }
+    nav{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        ul{
+            list-style:none;
+            padding-left:0;
+            li{
+                display:inline-block;
+                a{
+                    padding: $gutter/3 $gutter/2;
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+}
+footer{
+    nav{
+
+        ul{
+            text-align: center;
+            list-style:none;
+            padding-left:0;
+            li{
+                display:inline-block;
+                a{
+                    padding: $gutter/3 $gutter/2;
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+}
+/*Home*/
+section{
+    margin:0;
+    padding:0px;
+    .container{
+        max-width: 1300px;
+        margin: auto;
+        padding: 0 $gutter/2;
+    }
+    &#hero{
+        height: 100vh;
+        width: 100%;
+        background:{
+            color: #f6f6f6; 
+            image: url('../images/desk.jpg');
+            size: cover;
+            position: center center;
+
+        }
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        .blur{
+            position: relative;
+            z-index:0;
+            padding: $gutter;
+            overflow: hidden;
+            background: #fff;
+            #blurImg{ 
+                background: {
+                    image: url('../images/desk.jpg');
+                    position:center center;
+                    size:cover;
+                }
+                -webkit-filter: blur(4px); 
+                filter: blur(4px);
+                position: absolute;
+                z-index:1;
+                top:0;
+                bottom:0;
+                left:0;
+                right:0;
+            }
+            .white{
+                display: block;
+                background: #fff;
+                opacity: 0.5;
+                position:absolute;
+                z-index:2;
+                left:0;
+                right:0;
+                top:0;
+                bottom:0;
+            }
+            h2{
+                position:relative;
+                z-index:3;
+                font-size: 5em;
+                margin: 0;
+                line-height: 1;
+            }
+            h5{
+                position:relative;
+                z-index:3;
+                font-size:1em;
+                letter-spacing: 0.28em;
+                text-transform: uppercase;
+                margin-bottom:0;
+            }
+        }
+    }
+     
+}
+       

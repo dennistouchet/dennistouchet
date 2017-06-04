@@ -1,0 +1,141 @@
+/*Typography*/
+@font-face {
+  font-family: 'Archivo Narrow';
+  src: url("../fonts/ArchivoNarrow-Regular.woff2") format("woff2"), url("../fonts/ArchivoNarrow-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Archivo Narrow';
+  src: url("../fonts/ArchivoNarrow-Italic.woff2") format("woff2"), url("../fonts/ArchivoNarrow-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: 'Archivo Narrow';
+  src: url("../fonts/ArchivoNarrow-Bold.woff2") format("woff2"), url("../fonts/ArchivoNarrow-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Archivo Narrow';
+  src: url("../fonts/ArchivoNarrow-BoldItalic.woff2") format("woff2"), url("../fonts/ArchivoNarrow-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+@font-face {
+  font-family: 'DejaVu Sans Mono';
+  src: url("../fonts/DejaVuSansMono.woff2") format("woff2"), url("../fonts/DejaVuSansMono.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+/*Universal Styles*/
+body {
+  font-family: "Archivo Narrow", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  color: #383838;
+  background-color: #fff;
+  margin: 0; }
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+header {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #fff;
+  padding: 0 15px; }
+  header h1 {
+    margin: 0;
+    font-family: 'DejaVu Sans Mono', sans-serif;
+    font-size: 1.1em;
+    padding: 0 15px; }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header nav ul {
+      list-style: none;
+      padding-left: 0; }
+      header nav ul li {
+        display: inline-block; }
+        header nav ul li a {
+          padding: 10px 15px;
+          font-size: 1.2em; }
+
+footer nav ul {
+  text-align: center;
+  list-style: none;
+  padding-left: 0; }
+  footer nav ul li {
+    display: inline-block; }
+    footer nav ul li a {
+      padding: 10px 15px;
+      font-size: 1.2em; }
+
+/*Home*/
+section {
+  margin: 0;
+  padding: 0px; }
+  section .container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 15px; }
+  section#hero {
+    height: 100vh;
+    width: 100%;
+    background-color: #f6f6f6;
+    background-image: url("../images/desk.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    section#hero .blur {
+      position: relative;
+      z-index: 0;
+      padding: 30px;
+      overflow: hidden;
+      background: #fff; }
+      section#hero .blur #blurImg {
+        background-image: url("../images/desk.jpg");
+        background-position: center center;
+        background-size: cover;
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0; }
+      section#hero .blur .white {
+        display: block;
+        background: #fff;
+        opacity: 0.5;
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0; }
+      section#hero .blur h2 {
+        position: relative;
+        z-index: 3;
+        font-size: 5em;
+        margin: 0;
+        line-height: 1; }
+      section#hero .blur h5 {
+        position: relative;
+        z-index: 3;
+        font-size: 1em;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        margin-bottom: 0; }
+
+/*# sourceMappingURL=styles.css.map */
