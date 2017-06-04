@@ -101,7 +101,12 @@ section {
       z-index: 0;
       padding: 30px;
       overflow: hidden;
-      background: #fff; }
+      background: #fff;
+      width: 320px;
+      height: 150px;
+      display: flex;
+      align-content: center;
+      flex-wrap: wrap; }
       section#hero .blur #blurImg {
         background-image: url("../images/desk.jpg");
         background-position: center center;
@@ -129,13 +134,15 @@ section {
         z-index: 3;
         font-size: 5em;
         margin: 0;
-        line-height: 1; }
+        line-height: 1;
+        width: 100%; }
       section#hero .blur h5 {
         position: relative;
         z-index: 3;
         font-size: 1em;
         letter-spacing: 0.28em;
         text-transform: uppercase;
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */

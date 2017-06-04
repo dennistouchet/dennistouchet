@@ -108,6 +108,7 @@ footer{
                 a{
                     padding: $gutter/3 $gutter/2;
                     font-size: 1.2em;
+
                 }
             }
         }
@@ -141,6 +142,11 @@ section{
             padding: $gutter;
             overflow: hidden;
             background: #fff;
+            width:320px;
+            height:150px;
+            display:flex;
+            align-content:center;
+            flex-wrap:wrap;
             #blurImg{ 
                 background: {
                     image: url('../images/desk.jpg');
@@ -173,6 +179,7 @@ section{
                 font-size: 5em;
                 margin: 0;
                 line-height: 1;
+                width:100%
             }
             h5{
                 position:relative;
@@ -181,6 +188,7 @@ section{
                 letter-spacing: 0.28em;
                 text-transform: uppercase;
                 margin-bottom:0;
+                width:100%;
             }
         }
     }
