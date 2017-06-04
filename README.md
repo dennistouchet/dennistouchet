@@ -1,3 +1,3 @@
-# dennistouchet
+# dennistouchet.com
 
-Personal Website
+My person website rebuild.
